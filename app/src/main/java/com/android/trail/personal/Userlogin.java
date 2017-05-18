@@ -20,7 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.trail.R;
+import com.example.a20160316.trajectory.R;
 import com.android.trail.homepage.MainActivity;
 
 import org.json.JSONArray;

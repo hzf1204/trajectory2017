@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.android.trail.R;
+import com.example.a20160316.trajectory.R;
 import com.android.trail.homepage.MainActivity;
 
 /**

@@ -10,8 +10,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import com.example.a20160316.trajectory.R;
 
-import com.android.trail.R;
 import com.android.trail.homepage.MainActivity;
 import com.android.trail.json.BusRequestJson;
 import com.android.trail.pulltorefresh.RefreshableView;

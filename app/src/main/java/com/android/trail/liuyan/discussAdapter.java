@@ -9,8 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.android.trail.R;
+import com.example.a20160316.trajectory.R;
 import com.android.trail.bus.LoadPicture;
 
 import java.io.IOException;

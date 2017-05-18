@@ -15,8 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
-import com.android.trail.R;
+import com.example.a20160316.trajectory.R;
 
 /**
  * Created by Lenovo on 2016/12/12.

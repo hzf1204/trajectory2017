@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.android.trail.R;
+import com.example.a20160316.trajectory.R;
 
 import java.io.File;
 import java.io.IOException;

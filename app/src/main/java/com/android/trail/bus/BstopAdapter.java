@@ -11,7 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.trail.R;
+import com.example.a20160316.trajectory.R;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
