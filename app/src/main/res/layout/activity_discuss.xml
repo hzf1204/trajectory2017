@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <!-- 留言板layout songhongxue上传-->
+    <LinearLayout
+        android:id="@+id/top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFCC00">
+        <Button
+            android:id="@+id/btn_discuss"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/goback"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <com.android.trail.pulltorefresh.RefreshableView
+        android:id="@+id/fresh_view"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+        <ListView
+            android:id="@+id/discuss_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ListView>
+    </com.android.trail.pulltorefresh.RefreshableView>
+    <RelativeLayout
+        android:background="#FFCC00"
+        android:paddingBottom="5dp"
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send"
+            android:id="@+id/btn_put"/>
+        <EditText
+            android:layout_toLeftOf="@+id/btn_put"
+            android:id="@+id/discuss_edt"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的留言....."
+            android:background="@drawable/bg_edittext_normal"/>
+    </RelativeLayout>
+
+</RelativeLayout>

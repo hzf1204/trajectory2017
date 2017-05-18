@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/amapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <ImageView
+        android:id="@+id/rate_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/rate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="20dp"/>
+</RelativeLayout>
