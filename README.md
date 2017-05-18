@@ -1,31 +1,35 @@
-h2. ÏîÄ¿×é³ÉÔ±ĞÅÏ¢
+h2. é¡¹ç›®ç»„æˆå‘˜ä¿¡æ¯
 
 
 
-ÏîÄ¿£º JavaÓëÒÆ¶¯Éè±¸_¹ì¼£2017.docx
+é¡¹ç›®ï¼š Javaä¸ç§»åŠ¨è®¾å¤‡_è½¨è¿¹2017.docx
 
 
 
 
-|_.ĞòºÅ|_.ĞÕÃû|_.redmineÖ÷Ò³|_.githubÖ÷Ò³|_.½ÇÉ«|
-|1|ºØÕñ·á|http://www.hostedredmine.com/users/56807|https://github.com/hzf1204|ÏîÄ¿¾­Àí¡¢¿ª·¢¹¤³ÌÊ¦|
-|2|½ªÈôÓê|http://www.hostedredmine.com/users/56807|https://github.com/jry1995|UIÉè¼Æ¡¢¿ª·¢¹¤³ÌÊ¦|
-|3|½¯Ê¤´ï|http://www.hostedredmine.com/users/57075|https://github.com/shengda|¿ª·¢¹¤³ÌÊ¦¡¢²âÊÔ¹¤³ÌÊ¦|
-|4|ºî»áÕÙ|http://www.hostedredmine.com/users/57028|https://github.com/Mr-HuiZhao|²úÆ·¾­Àí¡¢¿ª·¢¹¤³ÌÊ¦|  
+åºå·|_.å§“å|_.redmineä¸»é¡µ|_.githubä¸»é¡µ|_.è§’è‰²|   
+|1|è´ºæŒ¯ä¸°   |http://www.hostedredmine.com/users/56807  https://github.com/hzf1204      |é¡¹ç›®ç»ç†ã€å¼€å‘å·¥ç¨‹å¸ˆ|   
+|2|å§œè‹¥é›¨   |http://www.hostedredmine.com/users/56807  https://github.com/jry1995      |UIè®¾è®¡ã€å¼€å‘å·¥ç¨‹å¸ˆ|   
+|3|è’‹èƒœè¾¾   |http://www.hostedredmine.com/users/56794  https://github.com/SantaJiang   |å¼€å‘å·¥ç¨‹å¸ˆã€æµ‹è¯•å·¥ç¨‹å¸ˆ|   
+|4|ä¾¯ä¼šå¬   |http://www.hostedredmine.com/users/57028  https://github.com/Mr-HuiZhao   |äº§å“ç»ç†ã€å¼€å‘å·¥ç¨‹å¸ˆ|  
 
+h2. éœ€æ±‚æ–‡æ¡£
 
-h2. ĞèÇóÎÄµµ
+https://github.com/hzf1204/trajectory2017/blob/master/%E8%BD%A8%E8%BF%B92017_%E9%9C%80%E6%B1%82%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E4%B9%A6%20v1.0.doc
 
-attachment:¹ì¼£20ĞèÇóËµÃ÷Êé.docx
+h2. ç•Œé¢åŸå‹è®¾è®¡
 
-h2. ½çÃæÔ­ĞÍÉè¼Æ
-
-h3. Android¶Ë 
+h3. Androidç«¯ 
 
 https://modao.cc/app/pMfhhWNuQaQjZ8dLlsrdrqzfLAX2fTs
 
-h2. Ô´Âë
+h4.æ¥å£è®¾è®¡æ–‡æ¡£
 
-h3. Android¶Ë 
+https://github.com/hzf1204/trajectory2017/blob/master/%E8%BD%A8%E8%BF%B92017_%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.docx
 
-https://github.com/hzf1204/trajectory/
+h5.è¯¦ç»†è®¾è®¡
+https://github.com/hzf1204/trajectory2017/blob/master/%E8%BD%A8%E8%BF%B92017_%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1.doc
+
+h6. Androidç«¯ 
+
+https://github.com/hzf1204/trajectory2017
