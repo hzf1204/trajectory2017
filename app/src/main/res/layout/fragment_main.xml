@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_ground_yellow"
+    android:background="@drawable/first_page"
     tools:context=".homepage.MainActivity" >
 
 
@@ -22,7 +22,7 @@
         android:src="@drawable/white_picture" />
 
 
-    <com.android.trail.homepage.TrapezoidImageButton
+    <com.android.trajectory.homepage.TrapezoidImageButton
         android:id="@+id/telId1"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
         android:tag="telId1" />
 
 
-    <com.android.trail.homepage.TrapezoidImageButton
+    <com.android.trajectory.homepage.TrapezoidImageButton
         android:id="@+id/telId2"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
@@ -40,16 +40,16 @@
         android:tag="telId12" />
 
 
-    <com.android.trail.homepage.TrapezoidImageButton
-        android:id="@+id/telId3"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/select_menu_3"
-        android:tag="telId3" />
+    <!--<com.android.trail.homepage.TrapezoidImageButton-->
+        <!--android:id="@+id/telId3"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/select_menu_3"-->
+        <!--android:tag="telId3" />-->
 
 
-    <com.android.trail.homepage.TrapezoidImageButton
+    <com.android.trajectory.homepage.TrapezoidImageButton
         android:id="@+id/telId4"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
@@ -58,12 +58,12 @@
         android:tag="telId4" />
 
 
-    <com.android.trail.homepage.TrapezoidImageButton
-        android:id="@+id/telId5"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/select_menu_5"
-        android:tag="telId5" />
+    <!--<com.android.trail.homepage.TrapezoidImageButton-->
+        <!--android:id="@+id/telId5"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/select_menu_5"-->
+        <!--android:tag="telId5" />-->
 
 </RelativeLayout>

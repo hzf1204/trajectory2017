@@ -71,12 +71,12 @@
                     android:textColor="@android:color/black"/>
 
             </LinearLayout>
-            <com.android.trail.map.MyListView
+            <com.android.trajectory.map.MyListView
                 android:id="@+id/list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:descendantFocusability="blocksDescendants">
-            </com.android.trail.map.MyListView>
+            </com.android.trajectory.map.MyListView>
 
         </LinearLayout>
 
