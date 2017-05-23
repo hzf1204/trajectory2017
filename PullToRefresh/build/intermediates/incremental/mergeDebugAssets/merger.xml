@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\workbase\androidV\trajectory\PullToRefresh\assets"/><source path="E:\workbase\androidV\trajectory\PullToRefresh\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\workbase\androidV\trajectory\PullToRefresh\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\android_project\trajectory2017\PullToRefresh\assets"/><source path="D:\android_project\trajectory2017\PullToRefresh\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\android_project\trajectory2017\PullToRefresh\src\debug\assets"/></dataSet></merger>

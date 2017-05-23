@@ -30,6 +30,7 @@ import qiu.niorgai.StatusBarCompat;
  */
 
 public class JieShaoActivity extends Activity {
+    //介绍页面等待修改
 
     private TextView tv1,tv2,tv3,tv4,tv5,tv6,tv_more;
     private Button img;
