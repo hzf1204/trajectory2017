@@ -1,40 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.android.trajectory">
+    package="com.android.trajectory">
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-    <!-- 这个权限用于进行网络定位 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <!-- 这个权限用于访问GPS定位 -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <!-- 用于读取手机当前的状态-->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <!-- 访问网络，网络定位需要上网-->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- SD卡读取权限，用户写入离线定位数据-->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-    <!--允许应用读取低级别的系统日志文件 -->
-    <uses-permission android:name="android.permission.READ_LOGS"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -42,35 +14,81 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <!-- 这个权限用于进行网络定位-->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <!-- 这个权限用于访问GPS定位-->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <!-- 用于读取手机当前的状态-->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <!-- 访问网络，网络定位需要上网-->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <!-- SD卡读取权限，用户写入离线定位数据-->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-    <!--允许应用读取低级别的系统日志文件 -->
-    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- 申明网络权限  -->
+    <!-- 申明网络权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 申明权限 操作SD卡 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
 
     <application
         android:allowBackup="true"
@@ -78,80 +96,67 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="FWLDbKCVglWGkQlX1jecy36brPgHUv84" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c44275f4c3d4b194cf22b664b9d27252" />
 
-            <!--android:value="5mtxMu6EeQ3V8x25nKZqoyBICSFF35Ag" />-->
+        <!-- android:value="5mtxMu6EeQ3V8x25nKZqoyBICSFF35Ag" /> -->
 
-        <service android:name="com.baidu.location.f"
+        <service
+            android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote"
-            />
+            android:process=":remote" />
 
-
-        <activity android:name="com.android.trajectory.map.Rounting"/>
-        <activity android:name="com.android.trajectory.liuyan.Discuss"
-            android:windowSoftInputMode="adjustPan"/>
-        <activity android:name="com.android.trajectory.bus.BusStopActivity"/>
-        <activity android:name="com.android.trajectory.personal.PersonalActivity"/>
-
-        <activity android:name="com.android.trajectory.com.adroid.huizhao.ViewPager.JieShaoActivity"/>
-        <activity android:name="com.android.trajectory.com.adroid.huizhao.Test"/>
-
-        <activity android:name="com.android.trajectory.com.adroid.huizhao.ViewPager.JieShao1"/>
-        <activity android:name="com.android.trajectory.com.adroid.huizhao.ViewPager.JieShao2"/>
-        <activity android:name="com.android.trajectory.com.adroid.huizhao.ViewPager.JieShao3"/>
-        <activity android:name="com.android.trajectory.com.adroid.huizhao.ViewPager.JieShao4"/>
-        <activity android:name="com.android.trajectory.com.adroid.huizhao.ViewPager.Jieshao5"/>
-        <activity android:name="com.android.trajectory.com.adroid.huizhao.ViewPager.JieShao6"/>
-        <activity android:name="com.android.trajectory.com.adroid.huizhao.ViewPager.JieShaoMore"/>
-
-        <activity android:name="com.android.trajectory.scenery.Scan"/>
-        <activity android:name="com.android.trajectory.scenery.Share"/>
-
-        <activity android:name="com.android.trajectory.bus.MoveList"/>
-
-        
-        <activity android:name="com.android.trajectory.personal.Userlogin"/>
-        <activity android:name="com.android.trajectory.personal.PersonalData2Activity"/>
-
-        <activity android:name="com.android.trajectory.welcomepage.First"/>
-        <activity android:name="com.android.trajectory.homepage.MainActivity"/>
-        <activity android:name="com.android.trajectory.personal.PersonalData2Activity"/>
-        <activity android:name="com.android.trajectory.welcomepage.NotFirst">
+        <activity android:name=".map.Rounting" />
+        <activity
+            android:name=".liuyan.Discuss"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".bus.BusStopActivity" />
+        <activity android:name=".personal.PersonalActivity" />
+        <activity android:name=".com.adroid.huizhao.ViewPager.JieShaoActivity" />
+        <activity android:name=".com.adroid.huizhao.Test" />
+        <activity android:name=".com.adroid.huizhao.ViewPager.JieShao1" />
+        <activity android:name=".com.adroid.huizhao.ViewPager.JieShao2" />
+        <activity android:name=".com.adroid.huizhao.ViewPager.JieShao3" />
+        <activity android:name=".com.adroid.huizhao.ViewPager.JieShao4" />
+        <activity android:name=".com.adroid.huizhao.ViewPager.Jieshao5" />
+        <activity android:name=".com.adroid.huizhao.ViewPager.JieShao6" />
+        <activity android:name=".com.adroid.huizhao.ViewPager.JieShaoMore" />
+        <activity android:name=".scenery.Scan" />
+        <activity android:name=".scenery.Share" />
+        <activity android:name=".bus.MoveList" />
+        <activity android:name=".personal.Userlogin" />
+        <activity android:name=".personal.PersonalData2Activity" />
+        <activity android:name=".welcomepage.First" />
+        <activity android:name=".homepage.MainActivity" />
+        <activity android:name=".personal.PersonalData2Activity" />
+        <activity android:name=".welcomepage.NotFirst">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--<activity android:name=".zhenfeng.Scenery">-->
-        <!--<activity android:name=".com.adroid.huizhao.ViewPager.JieShaoActivity">-->
-        <activity android:name="com.android.trajectory.map.Map"/>
-        <activity android:name="com.android.trajectory.map.Map_list"/>
-        <activity android:name="com.android.trajectory.map.MapShow_list"/>
-        <activity android:name="com.android.trajectory.map.Detail"/>
-        <activity android:name="com.android.trajectory.map.Rate"/>
+        <!-- <activity android:name=".zhenfeng.Scenery"> -->
+        <!-- <activity android:name=".com.adroid.huizhao.ViewPager.JieShaoActivity"> -->
+        <activity android:name=".map.Map" />
+        <activity android:name=".map.Map_list" />
+        <activity android:name=".map.MapShow_list" />
+        <activity android:name=".map.Detail" />
+        <activity android:name=".map.Rate" />
         <activity
-            android:name="com.android.trajectory.map.activity.AlbumActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name="com.android.trajectory.map.activity.ImageFile" >
-        </activity>
-        <activity
-            android:name="com.android.trajectory.map.activity.ShowAllPhoto" >
-        </activity>
-        <activity
-            android:name="com.android.trajectory.map.activity.GalleryActivity">
-        </activity>
-        <activity android:name="com.android.trajectory.map.BNDemoGuideActivity"/>
-        <activity android:name="com.android.trajectory.map.CustomRouteActivity"/>
-        <activity android:name="com.android.trajectory.map.Navi"/>
-
-
+            android:name=".map.activity.AlbumActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".map.activity.ImageFile"></activity>
+        <activity android:name=".map.activity.ShowAllPhoto"></activity>
+        <activity android:name=".map.activity.GalleryActivity"></activity>
+        <activity android:name=".map.BNDemoGuideActivity" />
+        <activity android:name=".map.CustomRouteActivity" />
+        <activity android:name=".map.Navi" />
+        <activity android:name=".scenery.MapsActivity"></activity>
     </application>
 
 </manifest>

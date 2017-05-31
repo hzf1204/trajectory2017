@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import com.android.trajectory.R;
 import com.android.trajectory.com.adroid.huizhao.ViewPager.JieShaoActivity;
 import com.android.trajectory.map.Map;
-import com.android.trajectory.scenery.Scan;
+import com.android.trajectory.scenery.MapsActivity;
 import com.android.trajectory.personal.PersonalActivity;
 import com.android.trajectory.personal.Userlogin;
 
@@ -101,7 +101,8 @@ public class MainActivity extends Activity {
 
             rootView.findViewById(R.id.telId1).setOnClickListener(onclick);
             rootView.findViewById(R.id.telId2).setOnClickListener(onclick);
-//            rootView.findViewById(R.id.telId3).setOnClickListener(onclick);
+//            rootView.findViewById(R
+// .id.telId3).setOnClickListener(onclick);
             rootView.findViewById(R.id.telId4).setOnClickListener(onclick);
 //            rootView.findViewById(R.id.telId5).setOnClickListener(onclick);
             //个人中心监听
@@ -139,7 +140,7 @@ public class MainActivity extends Activity {
                     //风景页
                     case R.id.telId4:
                         Intent intent4 = new Intent();
-                        intent4.setClass(MainActivity.this, Scan.class);
+                        intent4.setClass(MainActivity.this, MapsActivity.class);
                         startActivity(intent4);
                         break;
 //                    //留言

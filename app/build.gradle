@@ -1,9 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    sourceSets{
-        main{
-            jniLibs.srcDirs=['libs']
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
         }
     }
     signingConfigs {
@@ -42,10 +42,15 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    testCompile 'junit:junit:4.12'
     compile project(':StatusBar')
     compile files('libs/BaiduLBS_Android.jar')
     compile project(':carrousellayout')
+    compile files('libs/AMap_Location_V3.4.0_20170427.jar')
+    compile files('libs/AMap_Search_V3.6.0_20161111.jar')
+    compile files('libs/Android_Map3D_SDK_V4.1.2_20161104.jar')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
 }
+
 
