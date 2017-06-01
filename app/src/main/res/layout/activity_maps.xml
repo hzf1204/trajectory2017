@@ -28,12 +28,12 @@
         android:id="@+id/Information"
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="123123123123123"/>
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/Fog_btn"
+        android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="迷雾模式" />
+        android:text="开启轨迹" />
 </FrameLayout>
