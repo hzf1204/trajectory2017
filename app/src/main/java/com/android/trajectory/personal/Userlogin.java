@@ -1,9 +1,12 @@
 package com.android.trajectory.personal;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -47,6 +50,8 @@ public class Userlogin extends Activity implements View.OnClickListener,View.OnL
     private String urlPath,urlPath2;
     private URL url = null;
     private String responseData;
+
+    private Context context;
 
     // 声明控件对象
     private EditText et_name, et_pass;
@@ -155,14 +160,30 @@ public class Userlogin extends Activity implements View.OnClickListener,View.OnL
             }
         };
     }
-
+    //判断网络连接
+    public boolean isNetworkConnected(Context context) {
+        if (context != null) {
+            ConnectivityManager mConnectivityManager = (ConnectivityManager) context
+                    .getSystemService(Context.CONNECTIVITY_SERVICE);
+            NetworkInfo mNetworkInfo = mConnectivityManager.getActiveNetworkInfo();
+            if (mNetworkInfo != null) {
+                return mNetworkInfo.isAvailable();
+            }
+        }
+        return false;
+    }
     @Override
     public void onClick(View arg0) {
         // TODO Auto-generated method stub
         switch (arg0.getId()) {
             case R.id.login:  //登陆
 //   login();
-                Login();
+                if (isNetworkConnected(context)){
+                    Login();
+                }else {
+                    Toast.makeText(this, "当前网络不可用", Toast.LENGTH_SHORT).show();
+                }
+
                 break;
             case R.id.login_error: //无法登陆(忘记密码了吧)
 //   Intent login_error_intent=new Intent();
