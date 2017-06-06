@@ -145,8 +145,8 @@ android:layout_marginRight="20dp" >
     android:background="#00000000"
     android:gravity="center"
     android:singleLine="true"
-    android:text="AnyLife,Make the world a better place."
-    android:textSize="16sp"
+    android:text="轨迹2017 第二小组"
+    android:textSize="10sp"
     android:visibility="visible" />
 
 
