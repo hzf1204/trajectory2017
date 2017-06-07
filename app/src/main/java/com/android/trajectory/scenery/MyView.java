@@ -3,8 +3,10 @@ package com.android.trajectory.scenery;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.DiscretePathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.PathEffect;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.util.DisplayMetrics;
@@ -19,6 +21,8 @@ public class MyView extends View {
     private Canvas mCanvas;
     private Paint mPaint;
     private Path mPath;
+
+
 
 
     public MyView(Context context) {
@@ -63,6 +67,8 @@ public class MyView extends View {
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
         mPaint.setStrokeWidth(50);  //笔画宽度
+        //绘制杂点轨迹
+        mPaint.setPathEffect(new DiscretePathEffect(3.0F, 5.0F));
 
         //set path
         mPath = new Path();

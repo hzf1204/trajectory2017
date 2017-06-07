@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.amap.api.services.core.LatLonPoint;
 import com.android.trajectory.R;
 import android.app.Activity;
 import android.graphics.Point;
@@ -24,6 +26,7 @@ import com.amap.api.maps.model.LatLng;
 
 
 public class MapsActivity extends Activity implements LocationSource, AMapLocationListener {
+    private LatLng pos;
     private int i = 0;
     private MyView myView;
     private double x;
@@ -31,6 +34,8 @@ public class MapsActivity extends Activity implements LocationSource, AMapLocati
     private float dot_x = 0;
     private float dot_y = 0;
     private FrameLayout act_main;
+    private LatLonPoint lp = new LatLonPoint(39.993743, 116.472995);// 116.472995,39.993743
+    static public boolean fog_draw_pause_judge = true;
     private Button btn;
     private Button stop_btn;
     private AMap aMap;
@@ -120,6 +125,7 @@ public class MapsActivity extends Activity implements LocationSource, AMapLocati
         super.onResume();
         //在activity执行onResume时执行mMapView.onResume ()，实现地图生命周期管理
         mapView.onResume();
+        fog_draw_pause_judge = true;
     }
 
     @Override
@@ -127,6 +133,7 @@ public class MapsActivity extends Activity implements LocationSource, AMapLocati
         super.onPause();
         //在activity执行onPause时执行mMapView.onPause ()，实现地图生命周期管理
         mapView.onPause();
+        fog_draw_pause_judge = false;
     }
 
     /*
@@ -134,6 +141,39 @@ public class MapsActivity extends Activity implements LocationSource, AMapLocati
      */
     @Override
     public void onLocationChanged(final AMapLocation amapLocation) {
+        mLocationErrText.setVisibility(View.GONE);
+        mListener.onLocationChanged(amapLocation);// 显示系统小蓝点
+        x = amapLocation.getLatitude();
+        y = amapLocation.getLongitude();
+
+        lp.setLatitude(x);
+        lp.setLongitude(y);
+        //aMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(lp.getLatitude(), lp.getLongitude()), 14));
+
+            if (amapLocation.getErrorCode() == 0) {
+
+                pos = new LatLng(x,y);
+                Projection projection = aMap.getProjection();
+
+                Point dot = projection.toScreenLocation(pos);
+                dot_x = dot.x;
+                dot_y = dot.y;
+                if (fog_draw_pause_judge){
+                    if (i == 0){
+                        myView.start_pot(dot_x,dot_y);
+                    } else{
+                        myView.line(dot_x, dot_y);
+                    }
+                    i++;
+                    Toast.makeText(MapsActivity.this, "dot_x:" + dot_x + ", dot_y:" + dot_y, Toast.LENGTH_SHORT).show();
+                }
+            } else {
+            String errText = "定位失败," + amapLocation.getErrorCode() + ": " + amapLocation.getErrorInfo();
+            Log.e("AmapErr", errText);
+            mLocationErrText.setVisibility(View.VISIBLE);
+            mLocationErrText.setText(errText);
+        }
+        /*
         if (mListener != null && amapLocation != null) {
             if (amapLocation != null && amapLocation.getErrorCode() == 0) {
                 mLocationErrText.setVisibility(View.GONE);
@@ -176,7 +216,7 @@ public class MapsActivity extends Activity implements LocationSource, AMapLocati
                 mLocationErrText.setVisibility(View.VISIBLE);
                 mLocationErrText.setText(errText);
             }
-        }
+        }*/
     }
 
     /*private void adjustCamera(LatLng centerLatLng,int range){
