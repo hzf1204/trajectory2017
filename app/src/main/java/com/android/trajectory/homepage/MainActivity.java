@@ -27,8 +27,6 @@ import qiu.niorgai.StatusBarCompat;
 import static com.android.trajectory.R.menu.main;
 
 
-//Github第二阶段协同作业尝试性提交
-
 public class MainActivity extends Activity {
 
     //个人主页
