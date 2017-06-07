@@ -32,6 +32,7 @@ public class MapsActivity extends Activity implements LocationSource, AMapLocati
     private float dot_y = 0;
     private FrameLayout act_main;
     private Button btn;
+    private Button stop_btn;
     private AMap aMap;
     private MapView mapView;
     private OnLocationChangedListener mListener;
@@ -44,6 +45,8 @@ public class MapsActivity extends Activity implements LocationSource, AMapLocati
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         btn = (Button) findViewById(R.id.Fog_btn);
+        stop_btn = (Button) findViewById(R.id.Stop_Fog_btn);
+        stop_btn.setVisibility(View.GONE);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +56,16 @@ public class MapsActivity extends Activity implements LocationSource, AMapLocati
                 act_main.addView(myView);
                 i = 0;//初始化计数器
                 aMap.getUiSettings().setAllGesturesEnabled(false);//禁止所有手势操作
+                btn.setVisibility(View.GONE);
+                stop_btn.setVisibility(View.VISIBLE);
+            }
+        });
+        stop_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                act_main.removeView(myView);
+                stop_btn.setVisibility(View.GONE);
+                btn.setVisibility(View.VISIBLE);
             }
         });
         //获取地图控件引用

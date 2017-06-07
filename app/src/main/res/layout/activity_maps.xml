@@ -33,7 +33,17 @@
     <Button
         android:id="@+id/Fog_btn"
         android:layout_gravity="bottom"
+        android:background="@drawable/shape"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="开启轨迹" />
+        android:textColor="#ffffff"
+        android:text="开启探索轨迹" />
+    <Button
+        android:id="@+id/Stop_Fog_btn"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="停止" />
 </FrameLayout>
