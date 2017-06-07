@@ -33,7 +33,7 @@ public class MyView extends View {
 
         // 2.如果覆盖层是纯色
         Bitmap bm = createBitmapFromARGB(0xFF000000, SCREEN_W, SCREEN_H);
-        bm = setBitmapAlpha(bm, 100);  // 设置纯色图层的透明度
+        bm = setBitmapAlpha(bm,200);  // 设置纯色图层的透明度
         setCoverBitmap(bm);
 
     }
@@ -62,7 +62,7 @@ public class MyView extends View {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(60);  //笔画宽度
+        mPaint.setStrokeWidth(50);  //笔画宽度
 
         //set path
         mPath = new Path();
