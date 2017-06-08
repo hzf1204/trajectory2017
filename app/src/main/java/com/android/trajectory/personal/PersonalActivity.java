@@ -339,7 +339,7 @@ public class PersonalActivity extends AppCompatActivity implements View.OnClickL
     public void upData(){
         SharedPreferences share=getSharedPreferences("user", MainActivity.MODE_WORLD_WRITEABLE);
         try {
-            urlPath2 = "http://10.7.88.94:8992/user/?obj=3&realname="+ URLEncoder.encode(share.getString("realname",null),"UTF-8")
+            urlPath2 = "http://10.7.88.16/user/?obj=3&realname="+ URLEncoder.encode(share.getString("realname",null),"UTF-8")
                     +"&school="+ URLEncoder.encode(share.getString("school",null),"UTF-8")
                     +"&hobbies="+ URLEncoder.encode(share.getString("hobbies",null),"UTF-8")
                     +"&id="+ share.getInt("id",0);
@@ -435,7 +435,7 @@ public class PersonalActivity extends AppCompatActivity implements View.OnClickL
 
         Map<String, String> params = new HashMap<String, String>();//上传map对象
         params.put("userId", "");
-        uploadUtil.uploadFile(filepath, fileKey, "http://10.7.88.95/bus", params);
+        uploadUtil.uploadFile(filepath, fileKey, "http://10.7.88.16/bus", params);
         Toast.makeText(this, "上传成功", Toast.LENGTH_LONG).show();
     }
 
