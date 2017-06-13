@@ -19,6 +19,8 @@ import java.util.List;
 
 import qiu.niorgai.StatusBarCompat;
 
+import static com.baidu.mapapi.BMapManager.getContext;
+
 /**
  * Created by mingx_000 on 2016/11/29 0029.
  */
@@ -38,18 +40,19 @@ public class Map_list extends Activity{
         setContentView(R.layout.map_list);
         StatusBarCompat.setStatusBarColor(this, Color.BLUE,255);
         adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,data);
+        lv = (ListView)findViewById(R.id.fg2_list);
         //5.得到listview对象，并设置adapter
         getData();
         mListItems = new LinkedList<String>();
         mListItems.addAll(Arrays.asList(data));
-        myadapter=new MyAdapter(this,ls);
+        myadapter=new MyAdapter(getContext(),ls);
         lv.setAdapter(myadapter);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i>=0){
-                    Intent intent=new Intent(Map_list.this,MapShow_list.class);
+                    Intent intent=new Intent(Map_list.this,Detail.class);
                     startActivity(intent);
                 }
             }
@@ -80,7 +83,7 @@ public class Map_list extends Activity{
 //            shop s=new shop();
 //            ls.add(s);
 //        }
-        for(int i=0;i<15;i++) {
+        for(int i=0;i<5;i++) {
             ls.add(new shop(String.valueOf(R.drawable.shop_list1), String.valueOf(0), "四大名著", "￥115 免运费 北京"));
         }
     }
