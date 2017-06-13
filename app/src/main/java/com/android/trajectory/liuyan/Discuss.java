@@ -23,6 +23,7 @@ import java.util.Map;
 
 /**
  * Created by Loktar on 2016/11/22.
+ * 本部分代码已经无用 重复使用
  */
 public class Discuss extends Activity {
     List<Map<String, String>> list;
