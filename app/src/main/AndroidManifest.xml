@@ -98,7 +98,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="FWLDbKCVglWGkQlX1jecy36brPgHUv84" />
+            android:value="ZTF8D4CHMh9TcCGarRYVq886LfTeGNVv" />
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="c44275f4c3d4b194cf22b664b9d27252" />
