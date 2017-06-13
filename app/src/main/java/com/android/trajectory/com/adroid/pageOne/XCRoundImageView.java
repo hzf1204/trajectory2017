@@ -1,4 +1,4 @@
-package com.android.trajectory.com.adroid.huizhao;
+package com.android.trajectory.com.adroid.pageOne;
 
 import android.content.Context;
 import android.graphics.Bitmap;

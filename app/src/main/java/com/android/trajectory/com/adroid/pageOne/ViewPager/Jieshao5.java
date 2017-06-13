@@ -1,4 +1,4 @@
-package com.android.trajectory.com.adroid.huizhao.ViewPager;
+package com.android.trajectory.com.adroid.pageOne.ViewPager;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -11,21 +11,20 @@ import com.android.trajectory.R;
 
 import qiu.niorgai.StatusBarCompat;
 
-public class JieShao6 extends AppCompatActivity {
-
+public class Jieshao5 extends AppCompatActivity {
     private Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jie_shao6);
+        setContentView(R.layout.activity_jieshao5);
         StatusBarCompat.setStatusBarColor(this, Color.BLUE,255);
-        back = (Button)findViewById(R.id.jshao6_back);
+        back = (Button)findViewById(R.id.jshao5_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent back = new Intent();
-                back.setClass(JieShao6.this,JieShaoActivity.class);
+                back.setClass(Jieshao5.this,JieShaoActivity.class);
                 startActivity(back);
                 finish();
             }

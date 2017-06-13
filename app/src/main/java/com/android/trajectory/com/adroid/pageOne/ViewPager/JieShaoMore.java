@@ -1,4 +1,4 @@
-package com.android.trajectory.com.adroid.huizhao.ViewPager;
+package com.android.trajectory.com.adroid.pageOne.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;

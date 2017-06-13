@@ -1,4 +1,4 @@
-package com.android.trajectory.com.adroid.huizhao;
+package com.android.trajectory.com.adroid.pageOne;
 
 import android.app.Activity;
 import android.content.Context;

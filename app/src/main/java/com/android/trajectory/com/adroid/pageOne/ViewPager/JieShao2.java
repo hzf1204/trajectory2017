@@ -1,4 +1,4 @@
-package com.android.trajectory.com.adroid.huizhao.ViewPager;
+package com.android.trajectory.com.adroid.pageOne.ViewPager;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,8 +14,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.android.trajectory.R;
-import com.android.trajectory.com.adroid.huizhao.BitmapUtil;
-import com.android.trajectory.com.adroid.huizhao.DragImageView;
+import com.android.trajectory.com.adroid.pageOne.BitmapUtil;
+import com.android.trajectory.com.adroid.pageOne.DragImageView;
 
 import java.io.InputStream;
 
