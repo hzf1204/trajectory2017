@@ -52,11 +52,23 @@
         "source": "D:\\android_project\\trajectory2017\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
     },
     {
+        "merged": "E:\\workbase\\xiangmu\\trajectory2017\\trajectory2017\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "E:\\workbase\\xiangmu\\trajectory2017\\trajectory2017\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "E:\\workbase\\xiangmu\\trajectory2017\\trajectory2017\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "E:\\workbase\\xiangmu\\trajectory2017\\trajectory2017\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    },
+    {
         "merged": "E:\\workbase\\androidV\\trajectory\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
         "source": "E:\\workbase\\androidV\\trajectory\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
     },
     {
         "merged": "D:\\android_project\\trajectory2017\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
         "source": "D:\\android_project\\trajectory2017\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "E:\\workbase\\xiangmu\\trajectory2017\\trajectory2017\\PullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "E:\\workbase\\xiangmu\\trajectory2017\\trajectory2017\\PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
     }
 ]

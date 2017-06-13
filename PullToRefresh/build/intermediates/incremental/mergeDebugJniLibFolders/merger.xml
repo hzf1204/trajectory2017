@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\android_project\Trail\PullToRefresh\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="D:\android_project\Trail\PullToRefresh\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\workbase\xiangmu\trajectory2017\trajectory2017\PullToRefresh\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="E:\workbase\xiangmu\trajectory2017\trajectory2017\PullToRefresh\src\debug\jniLibs"/></dataSet></merger>
