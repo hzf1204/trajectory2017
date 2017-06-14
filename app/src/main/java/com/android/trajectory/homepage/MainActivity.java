@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.android.trajectory.R;
-import com.android.trajectory.com.adroid.huizhao.ViewPager.JieShaoActivity;
+import com.android.trajectory.com.adroid.pageOne.ViewPager.JieShaoActivity;
 import com.android.trajectory.map.Map;
 import com.android.trajectory.scenery.MapsActivity;
 import com.android.trajectory.personal.PersonalActivity;
@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
     private ImageView img;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //沉浸式状态栏实现
