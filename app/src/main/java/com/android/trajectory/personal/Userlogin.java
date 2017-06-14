@@ -97,7 +97,7 @@ public class Userlogin extends Activity implements View.OnClickListener,View.OnL
     private TextWatcher password_watcher;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //  requestWindowFeature(Window.FEATURE_NO_TITLE);
         //不显示系统的标题栏
@@ -182,6 +182,7 @@ public class Userlogin extends Activity implements View.OnClickListener,View.OnL
                     Login();
                 }else {
                     Toast.makeText(this, "当前网络不可用", Toast.LENGTH_SHORT).show();
+                    Login();
                 }
 
                 break;
@@ -389,24 +390,24 @@ public class Userlogin extends Activity implements View.OnClickListener,View.OnL
                         e.printStackTrace();
                     }
                 Intent intent = new Intent();
-                    editor.putInt("id", Integer.parseInt(list.get(0).get("id")));
-                    editor.putString("qq",list.get(0).get("qq"));
-                    editor.putString("vchat",list.get(0).get("vchat"));
-                    editor.putString("passward",list.get(0).get("passward"));
-                    editor.putString("hobbies",list.get(0).get("hobbies"));
-                    editor.putString("school", list.get(0).get("school"));
-                    editor.putString("getdate", list.get(0).get("getdate"));
-                    editor.putString("headsculpture",list.get(0).get("headsculpture"));
-                    editor.putString("username",list.get(0).get("username"));
-                    editor.putString("realname",list.get(0).get("realname"));
-                    editor.putString("gone",list.get(0).get("gone"));
-                    //新增
-                    editor.putString("qianming",list.get(0).get("qianming"));
-                    editor.putString("sina",list.get(0).get("sina"));
-                    editor.commit();
-                    intent.setClass(Userlogin.this,PersonalActivity.class);
-                    startActivity(intent);
-                    finish();
+//                    editor.putInt("id", Integer.parseInt(list.get(0).get("id")));
+//                    editor.putString("qq",list.get(0).get("qq"));
+//                    editor.putString("vchat",list.get(0).get("vchat"));
+//                    editor.putString("passward",list.get(0).get("passward"));
+//                editor.putString("hobbies",list.get(0).get("hobbies"));
+//                editor.putString("school", list.get(0).get("school"));
+//                editor.putString("getdate", list.get(0).get("getdate"));
+//                editor.putString("headsculpture",list.get(0).get("headsculpture"));
+//                editor.putString("username",list.get(0).get("username"));
+//                editor.putString("realname",list.get(0).get("realname"));
+//                editor.putString("gone",list.get(0).get("gone"));
+//                //新增
+//                editor.putString("qianming",list.get(0).get("qianming"));
+//                editor.putString("sina",list.get(0).get("sina"));
+//                editor.commit();
+                intent.setClass(Userlogin.this,PersonalActivity.class);
+                startActivity(intent);
+                finish();
                 } else {
                 Toast.makeText(Userlogin.this, "登陆失败", Toast.LENGTH_LONG).show();
             }
