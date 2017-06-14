@@ -297,7 +297,7 @@ public class PersonalActivity extends AppCompatActivity implements View.OnClickL
                         .show();
             }
         }));
-        upData();
+//        upData();
     }
 
 
