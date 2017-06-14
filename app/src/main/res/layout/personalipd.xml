@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/personalbg"
     android:orientation="vertical">
     <!-- 黄色标题栏以及返回按钮-->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#FFCC00">
+        android:layout_height="45dp">
         <Button
             android:id="@+id/person_back"
             android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/mm"/>
 
-            <com.android.trajectory.com.adroid.huizhao.XCRoundImageView
+            <com.android.trajectory.com.adroid.pageOne.XCRoundImageView
                 android:id="@+id/t2"
                 android:layout_width="145sp"
                 android:layout_height="145sp"
