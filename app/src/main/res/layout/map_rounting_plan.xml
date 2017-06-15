@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mapbg"
     android:weightSum="1">
 
     <ScrollView
@@ -13,30 +14,31 @@
             android:orientation="vertical">
             <!-- 黄色标题栏以及返回按钮-->
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:background="#FFCC00">
+                android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/luxian_back"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:background="@drawable/goback"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="5dp"/>
+                    android:background="@drawable/goback" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:paddingTop="20dp"
+                android:layout_margin="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="#3F51B5"
+                    android:background="#e9eaef"
                     android:id="@+id/btn_serch"
-                    android:text="快上车，带你畅游师大"
+                    android:text="自由选取坐标"
                     android:textSize="20sp"
                     />
             </LinearLayout>
@@ -50,7 +52,7 @@
                     android:layout_height="wrap_content"
                     android:text="北门-->新生报到处"
                     android:textSize="15sp"
-                    android:textColor="@color/mediumvioletred"/>
+                    android:textColor="#e9eaef"/>
                 <Button
                     android:id="@+id/walk"
                     android:layout_width="wrap_content"
@@ -67,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:text="诚朴园公寓楼-->第一食堂"
                     android:textSize="15sp"
-                    android:textColor="@color/mediumvioletred"/>
+                    android:textColor="#e9eaef"/>
                 <Button
                     android:id="@+id/walk1"
                     android:layout_width="wrap_content"
@@ -84,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:text="诚朴园-->天客隆"
                     android:textSize="15sp"
-                    android:textColor="@color/mediumvioletred"/>
+                    android:textColor="#e9eaef"/>
                 <Button
                     android:id="@+id/walk2"
                     android:layout_width="wrap_content"
@@ -101,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:text="诚朴园-->西门超市"
                     android:textSize="15sp"
-                    android:textColor="@color/mediumvioletred"/>
+                    android:textColor="#e9eaef"/>
                 <Button
                     android:id="@+id/walk3"
                     android:layout_width="wrap_content"
